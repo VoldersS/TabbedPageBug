@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell  
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:TabbedPageBug.Views"
+    TabBarBackgroundColor="Black" 
+    TabBarForegroundColor="Beige" 
+    TabBarUnselectedColor="Gray"
+    TabBarTitleColor="Beige"
+    FlyoutBackgroundColor="LightGray"
+    Shell.ForegroundColor="Black"
+    x:Class="TabbedPageBug.MainShellTabbedPage">
+    <TabBar>
+        <Tab Title="Tab 1">
+            <ShellContent ContentTemplate="{DataTemplate views:TabPageOne}" />
+        </Tab>
+        <Tab Title="Tab 2">
+            <ShellContent ContentTemplate="{DataTemplate views:TabPageTwo}" />
+        </Tab>
+    </TabBar>
+</Shell>
