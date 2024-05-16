@@ -9,18 +9,11 @@ public partial class ModalPage : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
-        try
+        await Dispatcher.DispatchAsync(async () =>
         {
-            await Dispatcher.DispatchAsync(async () =>
-            {
-                await Task.Delay(2500);
-                await Navigation.PopModalAsync();
-                //await App.Current.MainPage.Navigation.PopModalAsync();
-            });
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.ToString());
-        }
+            await Task.Delay(2500);
+            await Navigation.PopModalAsync();
+            //await App.Current.MainPage.Navigation.PopModalAsync();
+        });
     }
 }
