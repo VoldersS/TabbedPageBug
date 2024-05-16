@@ -13,7 +13,7 @@
         <Button 
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            Text="Open NavigationPage"
+            Text="Open Modal"
             Clicked="Button1_Clicked" />
     </Grid>
 </ContentPage>
